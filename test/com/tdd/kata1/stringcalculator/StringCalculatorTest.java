@@ -41,4 +41,10 @@ public class StringCalculatorTest {
         assertEquals(10, calculator.Add("1,2,3,4"));
     }
     
+    @Test
+    public void testNewLinesBetweenNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.Add("1\n2,3"));
+    }
+    
 }
