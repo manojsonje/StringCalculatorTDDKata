@@ -35,4 +35,10 @@ public class StringCalculatorTest {
         assertEquals(6, calculator.Add("1,2,3"));
     }
     
+    @Test
+    public void testMultipleNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(10, calculator.Add("1,2,3,4"));
+    }
+    
 }
