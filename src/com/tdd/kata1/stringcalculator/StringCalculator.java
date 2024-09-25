@@ -22,8 +22,10 @@ public class StringCalculator {
 		String[] nums = numbers.split(",");
 		if (nums.length == 1) {
 			return Integer.parseInt(nums[0]);
-		} else {
+		} else if (nums.length == 2){
 			return Integer.parseInt(nums[0]) + Integer.parseInt(nums[1]);
+		} else {
+			return Integer.parseInt(nums[0]) + Integer.parseInt(nums[1]) + Integer.parseInt(nums[2]) ;
 		}
 	}
 }
