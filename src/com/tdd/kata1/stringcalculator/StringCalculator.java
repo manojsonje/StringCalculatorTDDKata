@@ -13,4 +13,10 @@ public class StringCalculator {
 		// TODO Auto-generated method stub
 
 	}
+	public int Add(String numbers) {
+	        if (numbers.isEmpty()) {
+	            return 0;
+	        }
+	        return 0;  
+	 }
 }
