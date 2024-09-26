@@ -53,4 +53,12 @@ public class StringCalculatorTest {
         assertEquals(3, calculator.Add("//;\n1;2"));
     }
     
+    @Test
+    public void testNegativeNumbersThrowException() {
+        StringCalculator calculator = new StringCalculator();
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            calculator.Add("1,-2,3");
+        });
+        assertEquals("negative numbers not allowed -2", exception.getMessage());
+    }
 }
