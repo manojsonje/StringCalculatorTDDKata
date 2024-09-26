@@ -61,4 +61,13 @@ public class StringCalculatorTest {
         });
         assertEquals("negative numbers not allowed -2", exception.getMessage());
     }
+    
+    @Test
+    public void testMultipleNegativeNumbersThrowException() {
+        StringCalculator calculator = new StringCalculator();
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            calculator.Add("-1,-2,3");
+        });
+        assertEquals("negative numbers not allowed -1,-2", exception.getMessage());
+    }
 }
