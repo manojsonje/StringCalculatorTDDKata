@@ -70,4 +70,12 @@ public class StringCalculatorTest {
         });
         assertEquals("negative numbers not allowed -1,-2", exception.getMessage());
     }
+    
+    @Test
+    public void testGetCalledCount() {
+        StringCalculator calculator = new StringCalculator();
+        calculator.Add("1,2");
+        calculator.Add("3,4");
+        assertEquals(2, calculator.GetCalledCount());
+    }
 }

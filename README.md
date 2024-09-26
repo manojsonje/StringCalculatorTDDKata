@@ -40,23 +40,23 @@ Note: All existing scenarios and tests should still be supported
 Calling Add with a negative number will throw an exception “negatives not allowed” -and the negative that was passed. 
 
 
-## 6. 
+## 5.1. 
 If there are multiple negatives, show all of them in the exception message
 
-## 7. 
+## 6. 
 Using TDD, Add a method to StringCalculator called public int GetCalledCount() that returns how many times Add() was invoked. 
 Remember - Start with a failing (or even non compiling) test.
 
-## 8. 
+## 7. 
 Numbers bigger than 1000 should be ignored, for example:
 2 + 1001 == 2
 
-## 9.
+## 8.
 Delimiters can be of any length with the following format: “//[delimiter]\n” 
 for example: 
 “//[***]\n1***2***3” == 6
 
-## 10. 
+## 9. 
 Allow multiple delimiters like this: “//\[delim1\]\[delim2\]\n” 
 for example 
 "//\[ * ][ % ]\n1*2%3" == 6.
