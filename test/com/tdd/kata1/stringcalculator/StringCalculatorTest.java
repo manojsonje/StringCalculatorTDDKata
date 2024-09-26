@@ -78,4 +78,10 @@ public class StringCalculatorTest {
         calculator.Add("3,4");
         assertEquals(2, calculator.GetCalledCount());
     }
+    
+    @Test
+    public void testNumbersGreaterThan1000ToBeIgnored() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(2, calculator.Add("2,1001"));
+    }
 }
